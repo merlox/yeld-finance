@@ -1,0 +1,189 @@
+body {
+    background-color: hsl(230, 17%, 52%);
+    color: #00007a;
+    font-family: "Lucida Console";
+    font-size:16px;
+    line-height: 22px;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    border: 10px double #FFF;
+    padding: 10px;
+    background-color: silver;
+    margin: 0 auto;
+    max-width:800px;
+    box-shadow: 15px 11px 9px #000000;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: left;
+}
+.logo img {
+    width:100px;
+    padding: 20px;
+}
+
+.content {
+    padding: 20px;
+}
+.content.terminal {
+    text-align: left;
+}
+
+h1 {
+    background-color: #f63808;
+    color: #ffe118;
+    padding: 5px;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+hr {
+    border-color: #000;
+}
+
+.text-red {
+    color: #ffde00;
+    text-shadow: 2px 2px 1px black;
+}
+
+.row {
+    border-top: 2px solid #000;
+}
+
+.row .col {
+    float:left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.row .col-40 {
+    width:40%;
+}
+.row .col-60 {
+    width:60%;
+    border-right: 2px solid #000;
+}
+.cl {
+    clear:both;
+}
+
+
+.introrow {
+    padding-left: 5px;
+    display:none;
+}
+#row0 {
+    display: block;
+    margin-bottom:20px;
+}
+#row4,#row9 {
+    margin-top:20px;
+}
+#row5,#row6,#row7,#row8 {
+    padding-left:25px;
+}
+
+.blinking-cursor {
+    font-weight: 100;
+    font-size: 30px;
+    color: #2E3D48;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: black;
+    }
+}
+
+@-moz-keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: black;
+    }
+}
+
+@-webkit-keyframes "blink" {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: black;
+    }
+}
+
+@-ms-keyframes "blink" {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: black;
+    }
+}
+
+@-o-keyframes "blink" {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: black;
+    }
+}
+
+.nav-container {
+    -webkit-box-direction: normal;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: silver;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 14px;
+    padding-top:5px;
+}
+
+.nav-container a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: #000;
+    padding: 0 1em;
+    font-weight: normal;
+    font-size: 14px;
+    padding-top:4px;
+}
+
+.nav-container a.active,
+.nav-container a:hover {
+    background-color: #1a43ff;
+    color: #fff;
+}
+
+.bounce-button {
+    display:block;
+    margin: 0 auto;
+    width:200px;
+    background-color: #f63808;
+    color:#FFF;
+    padding: 10px 20px;
+    margin-top:50px;
+    margin-bottom: 50px;
+    text-decoration:none;
+    box-shadow: 5px 5px #000044;
+}
+.bounce-button:hover {
+    color:#000000;
+}
