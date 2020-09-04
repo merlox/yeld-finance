@@ -1,189 +1,333 @@
 body {
-    background-color: hsl(230, 17%, 52%);
-    color: #00007a;
-    font-family: "Lucida Console";
-    font-size:16px;
-    line-height: 22px;
-    text-align: center;
+    font-family: 'Source Serif Pro', serif;
     margin: 0;
+    font-size: 17pt;
+    background-color: #e1e1e1;
 }
 
-.container {
-    border: 10px double #FFF;
-    padding: 10px;
-    background-color: silver;
-    margin: 0 auto;
-    max-width:800px;
-    box-shadow: 15px 11px 9px #000000;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
 }
 
-.logo {
-    display: block;
-    margin: 0 auto;
-    max-width: 800px;
-    text-align: left;
-}
-.logo img {
-    width:100px;
-    padding: 20px;
-}
-
-.content {
-    padding: 20px;
-}
-.content.terminal {
-    text-align: left;
-}
-
-h1 {
-    background-color: #f63808;
-    color: #ffe118;
-    padding: 5px;
-    font-size: 26px;
-    font-weight: 500;
+ul > li, ol > li {
+    margin-bottom: 18px;
 }
 
 hr {
-    border-color: #000;
+    border: none;
+    border-top: 1px solid silver;
 }
 
-.text-red {
-    color: #ffde00;
-    text-shadow: 2px 2px 1px black;
+a {
+    color: black;
 }
 
-.row {
-    border-top: 2px solid #000;
+a:hover {
+    color: blue;
 }
 
-.row .col {
-    float:left;
-    padding: 20px;
-    box-sizing: border-box;
-}
-.row .col-40 {
-    width:40%;
-}
-.row .col-60 {
-    width:60%;
-    border-right: 2px solid #000;
-}
-.cl {
-    clear:both;
+a:active {
+    color: grey;
 }
 
-
-.introrow {
-    padding-left: 5px;
-    display:none;
+img {
+    max-width: 700px;
 }
-#row0 {
+
+.grey {
+    color: #4a4a4a;
+}
+
+.hide {
+    display: none;
+}
+
+.subtitle {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #444444;
+}
+
+.ebook-image {
+    width: 50%;
+    margin: auto;
     display: block;
-    margin-bottom:20px;
-}
-#row4,#row9 {
-    margin-top:20px;
-}
-#row5,#row6,#row7,#row8 {
-    padding-left:25px;
 }
 
-.blinking-cursor {
-    font-weight: 100;
-    font-size: 30px;
-    color: #2E3D48;
-    -webkit-animation: 1s blink step-end infinite;
-    -moz-animation: 1s blink step-end infinite;
-    -ms-animation: 1s blink step-end infinite;
-    -o-animation: 1s blink step-end infinite;
-    animation: 1s blink step-end infinite;
+.main-container {
+    display: grid;
+    grid-template-rows: 400px auto auto 150px;
+    margin: auto;
+    max-width: 700px;
 }
 
-@keyframes "blink" {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: black;
-    }
+.main-container-book {
+    display: grid;
+    grid-template-rows: 400px auto auto auto 150px;
+    margin: auto;
+    max-width: 700px;
 }
 
-@-moz-keyframes blink {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: black;
-    }
+.main-container-about-me {
+    display: grid;
+    grid-template-rows: 400px auto 150px;
+    margin: auto;
+    max-width: 700px;
 }
 
-@-webkit-keyframes "blink" {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: black;
-    }
+.main-container-course-purchased {
+    display: grid;
+    margin: auto;
+    max-width: 700px;
 }
 
-@-ms-keyframes "blink" {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: black;
-    }
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 30px;
+    align-items: stretch;
+    justify-items: stretch;
 }
 
-@-o-keyframes "blink" {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: black;
-    }
-}
-
-.nav-container {
-    -webkit-box-direction: normal;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: silver;
-    font-weight: bolder;
-    text-align: center;
-    line-height: 14px;
-    padding-top:5px;
-}
-
-.nav-container a {
-    margin: 0 1em;
+.navbar a {
+    color: rgb(224, 224, 224);
+    background-color: #282d33;
     text-decoration: none;
-    color: #000;
-    padding: 0 1em;
-    font-weight: normal;
-    font-size: 14px;
-    padding-top:4px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 11pt;
+    font-family: sans-serif;
+    font-weight: lighter;
 }
 
-.nav-container a.active,
-.nav-container a:hover {
-    background-color: #1a43ff;
-    color: #fff;
+.navbar a:hover {
+    opacity: 0.8;
 }
 
-.bounce-button {
-    display:block;
-    margin: 0 auto;
-    width:200px;
-    background-color: #f63808;
-    color:#FFF;
-    padding: 10px 20px;
-    margin-top:50px;
+.navbar a:active {
+    opacity: 0.95;
+}
+
+.navbar a.selected-navbar-item {
+    background-color: #808080;
+    color: white;
+}
+
+.view-course-button {
+    background-color: rgb(20, 93, 228);
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.view-course-button:hover {
+    background-color: rgb(38, 110, 244);
+}
+
+.view-course-button:active {
+    background-color: rgb(17, 70, 168);
+}
+
+.title-block {
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.title-block-course-purchased {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.purchase-block {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    grid-row-gap: 10pt;
     margin-bottom: 50px;
-    text-decoration:none;
-    box-shadow: 5px 5px #000044;
 }
-.bounce-button:hover {
-    color:#000000;
+
+.purchase-block h2 {
+    margin: 0;
+}
+
+.elements {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto 1fr 1fr;
+    grid-gap: 50px;
+    text-align: center;
+}
+
+.element-image {
+    display: block;
+    width: 100px;
+    margin: auto;
+    padding: 30px;
+}
+
+.elements p {
+    grid-column: 1 / span 12;
+    text-align: left;
+}
+
+.element-1, .element-5 {
+    grid-column: 1 / span 6;
+}
+.element-2, .element-6 {
+    grid-column: 7 / span 6;
+}
+.element-3, .element-7 {
+    grid-column: 1 / span 6;
+}
+.element-4, .element-8 {
+    grid-column: 7 / span 6;
+}
+
+.elements-final-text-block {
+    grid-column: 1 / span 12;
+}
+
+.book-block p:first-of-type::first-letter {
+    -webkit-initial-letter: 2;
+    initial-letter: 2;
+    font-weight: bolder;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.mains-image {
+    width: 100px;
+    height: 100px;
+}
+
+.clickable-title {
+    cursor: pointer;
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+.clickable-title:hover {
+    background-color: rgb(247, 247, 247);
+}
+
+.clickable-title:active {
+    opacity: 0.7;
+}
+
+.half-wide-button {
+    cursor: pointer;
+    box-sizing: border-box;
+    width: calc(50% - 3px);
+    border: 1px solid grey;
+    padding: 10px;
+    display: inline-block;
+    font-size: 13pt;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.half-wide-button:hover {
+    background-color: rgb(247, 247, 247);
+    color: black;
+}
+
+.half-wide-button:active {
+    opacity: 0.7;
+}
+
+.mailchimp-form {
+    grid-column: 1 / span 3;
+    margin-bottom: 200px;
+    box-shadow: 0px 2px 20px 1px grey;
+    border-radius: 10px;
+    padding: 50px;
+    margin-top: 40px;
+    font-size: 16pt;
+    text-align: center
+}
+
+.mailchimp-form h2 {
+    margin-top: 0;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* These are the email and name inputs */
+.mc-field-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.mc-field-group input {
+    border-radius: 10px;
+    border: 1px solid grey;
+    width: 50%;
+    padding: 10px;
+}
+
+#mc-embedded-subscribe {
+    background-color: rgb(41, 101, 255);
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 14pt;
+    margin-top: 10px;
+}
+
+#mc-embedded-subscribe:hover {
+    opacity: 0.8;
+}
+
+#mc-embedded-subscribe:active {
+    opacity: 0.6;
+}
+
+@media (max-width: 800px) {
+    body {
+        padding: 20px;
+    }
+    .navbar {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .elements {
+        display: flex;
+        flex-direction: column;
+    }
+    .elements div {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 650px) {
+    div.title-block {
+        grid-template-columns: auto;
+        text-align: center;
+    }
+    .main-container, .main-container-course-purchased, .main-container-about-me {
+        margin-top: 50px;
+    }
+    .main-container {
+        grid-template-rows: 500px 200px auto 150px;
+    }
+    .footer {
+        grid-template-columns: 1fr;
+    }
 }
